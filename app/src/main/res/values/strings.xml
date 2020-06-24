@@ -2,12 +2,12 @@
     <string name="app_name" translatable="false">Weather Forecast</string>
     <string name="cityWeather" translatable="true">Ulyanovsk</string>
     <string name="weather" translatable="true">Clouds</string>
-    <string name="temp" translatable="false">20</string>
-    <string name="temp1" translatable="false">20</string>
-    <string name="temp2" translatable="false">20</string>
-    <string name="temp3" translatable="false">20</string>
-    <string name="temp4" translatable="false">20</string>
-    <string name="temp5" translatable="false">20</string>
+    <string name="temp" translatable="false">20%1$c</string>
+    <string name="temp1" translatable="false">18%1$c</string>
+    <string name="temp2" translatable="false">15%1$c</string>
+    <string name="temp3" translatable="false">13%1$c</string>
+    <string name="temp4" translatable="false">14%1$c</string>
+    <string name="temp5" translatable="false">10%1$c</string>
     <string name="date26" translatable="false">26.06.2020</string>
     <string name="wind1" translatable="false">13 м/с</string>
     <string name="date27" translatable="false">27.06.2020</string>

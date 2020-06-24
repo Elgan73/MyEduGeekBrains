@@ -43,12 +43,12 @@ public class MainActivity extends AppCompatActivity {
         @SuppressLint("SimpleDateFormat")
         SimpleDateFormat format = new SimpleDateFormat(" hh:mm  dd.MM.yyyy");
         dateTime.setText(format.format(new Date()));
-        temperature.setText(getString(R.string.temp) + tmp);
-        temp1.setText("15" + tmp);
-        temp2.setText("13" + tmp);
-        temp3.setText("16" + tmp);
-        temp4.setText("10" + tmp);
-        temp5.setText("11" + tmp);
+        temperature.setText(getString(R.string.temp, tmp));
+        temp1.setText(getString(R.string.temp1, tmp));
+        temp2.setText(getString(R.string.temp2, tmp));
+        temp3.setText(getString(R.string.temp3, tmp));
+        temp4.setText(getString(R.string.temp4, tmp));
+        temp5.setText(getString(R.string.temp5, tmp));
 
 
 //        NetworkService.getInstance()
