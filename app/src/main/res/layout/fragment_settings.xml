@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bw"
+    tools:context=".fragments.SettingsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/CelsiusFarangeit"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorDarkGrey"
+        android:layout_marginTop="20dp"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        >
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/fahrenheit"
+            android:textColor="@color/colorDarkGrey"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/celsius"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/colorDarkGrey"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/Humidity"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorDarkGrey"
+        android:layout_marginTop="130dp"
+        />
+
+    <Switch
+        android:id="@+id/switchHumidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="170dp"
+        android:text="@string/on_off" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/WindSpeed"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/colorDarkGrey"
+        android:layout_marginTop="210dp"
+        />
+
+    <Switch
+        android:id="@+id/switchWidSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="250dp"
+        android:text="@string/on_off" />
+
+
+</FrameLayout>

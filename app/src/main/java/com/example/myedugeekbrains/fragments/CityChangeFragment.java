@@ -1,0 +1,62 @@
+package com.example.myedugeekbrains.fragments;
+
+import android.os.Bundle;
+
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+
+import com.example.myedugeekbrains.R;
+
+
+public class CityChangeFragment extends Fragment {
+
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
+    private String mParam1;
+    private String mParam2;
+    String[] dataSpinner = {"Ulyanovsk", "Moscow", "Vladivostok", "Voronezh"};
+
+    public CityChangeFragment() {
+    }
+
+
+    public static CityChangeFragment newInstance(String param1, String param2) {
+        CityChangeFragment fragment = new CityChangeFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments() != null) {
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+        }
+
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_city_change, container, false);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this.getActivity(), android.R.layout.simple_spinner_item, dataSpinner);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        Spinner spinner = view.findViewById(R.id.spinner);
+        spinner.setAdapter(adapter);
+        spinner.setPrompt("Cities");
+        spinner.setSelection(0);
+
+        return view;
+    }
+}
